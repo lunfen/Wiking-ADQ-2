@@ -129,12 +129,13 @@ public class charController : MonoBehaviour
 				GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.localScale.x*1200, 0));
 
 				// jerk off
+			/*
 				transform.Find("body").gameObject.SetActive(true);
 				transform.Find("Lshoulder").gameObject.SetActive(true);
 				transform.Find("Rshoulder").gameObject.SetActive(true);
 				transform.Find("Lhip").gameObject.SetActive(true);
 				transform.Find("Rhip").gameObject.SetActive(true);
-			
+			*/
 				jerkEffect.SetActive(false);
 			}
 
@@ -304,13 +305,13 @@ public class charController : MonoBehaviour
 			jerkTimer = 0.3f;
 			GetComponent<Rigidbody2D>().isKinematic = true;
 			GetComponent<Rigidbody2D>().isKinematic = false;
-
+/*
 			transform.Find("body").gameObject.SetActive(false);
 			transform.Find("Lshoulder").gameObject.SetActive(false);
 			transform.Find("Rshoulder").gameObject.SetActive(false);
 			transform.Find("Lhip").gameObject.SetActive(false);
 			transform.Find("Rhip").gameObject.SetActive(false);
-
+*/
 			// swap motion blur
 			if (transform.localScale.x < 0)
 				jerkEffect.transform.Find("blur").GetComponent<ParticleSystemRenderer>().material.SetTexture("_MainTex", jerkTexture[1]);
