@@ -78,7 +78,7 @@ TextureImporter:
         width: 115
         height: 124
       alignment: 9
-      pivot: {x: .24288702, y: .798441768}
+      pivot: {x: .504347801, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Lfoot
       rect:
@@ -123,12 +123,12 @@ TextureImporter:
     - name: Lshoulder
       rect:
         serializedVersion: 2
-        x: 237
+        x: 236
         y: 6
         width: 95
         height: 142
       alignment: 9
-      pivot: {x: .371357173, y: .776899338}
+      pivot: {x: .50526315, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: RArm
       rect:
@@ -137,8 +137,8 @@ TextureImporter:
         y: 5
         width: 160
         height: 178
-      alignment: 9
-      pivot: {x: .232568353, y: .79236412}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Rfoot
       rect:
@@ -188,7 +188,7 @@ TextureImporter:
         width: 145
         height: 205
       alignment: 9
-      pivot: {x: .726764977, y: .813472867}
+      pivot: {x: .503448248, y: .497560978}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: body
       rect:
@@ -248,7 +248,7 @@ TextureImporter:
         width: 106
         height: 55
       alignment: 9
-      pivot: {x: .22725001, y: .553988457}
+      pivot: {x: .5, y: .4909091}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: right_should
       rect:
@@ -258,7 +258,7 @@ TextureImporter:
         width: 142
         height: 87
       alignment: 9
-      pivot: {x: .825764418, y: .640472472}
+      pivot: {x: .5, y: .494252861}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: wings
       rect:
