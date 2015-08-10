@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: cd7cddbee106744ef8b793d686c06857
+timeCreated: 1436891595
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Larm
+    21300002: Lfoot
+    21300004: Lhand
+    21300006: Lhip
+    21300008: Lshin
+    21300010: Lshoulder
+    21300012: RArm
+    21300014: Rfoot
+    21300016: Rhand
+    21300018: Rhip
+    21300020: Rshin
+    21300022: Rshoulder
+    21300024: body
+    21300026: bodykilt
+    21300028: char_shadow
+    21300030: eyes
+    21300032: head
+    21300034: left_should
+    21300036: right_should
+    21300038: wings
+    21300040: wings_L
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Larm
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 24
+        width: 115
+        height: 124
+      alignment: 9
+      pivot: {x: .24288702, y: .798441768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lfoot
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 63
+        width: 127
+        height: 67
+      alignment: 9
+      pivot: {x: .503937006, y: .49253732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lhand
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 393
+        width: 101
+        height: 85
+      alignment: 9
+      pivot: {x: .504950523, y: .494117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lhip
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 13
+        width: 59
+        height: 90
+      alignment: 9
+      pivot: {x: .508474588, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lshin
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 306
+        width: 43
+        height: 85
+      alignment: 9
+      pivot: {x: .511627913, y: .494117647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Lshoulder
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 6
+        width: 95
+        height: 142
+      alignment: 9
+      pivot: {x: .371357173, y: .776899338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RArm
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 5
+        width: 160
+        height: 178
+      alignment: 9
+      pivot: {x: .232568353, y: .79236412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rfoot
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 132
+        width: 136
+        height: 71
+      alignment: 9
+      pivot: {x: .5, y: .492957741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rhand
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 92
+        width: 118
+        height: 111
+      alignment: 9
+      pivot: {x: .5, y: .495495498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rhip
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 8
+        width: 63
+        height: 95
+      alignment: 9
+      pivot: {x: .507936537, y: .49473685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rshin
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 301
+        width: 45
+        height: 90
+      alignment: 9
+      pivot: {x: .51111114, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rshoulder
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 185
+        width: 145
+        height: 205
+      alignment: 9
+      pivot: {x: .726764977, y: .813472867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: body
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 150
+        width: 284
+        height: 328
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bodykilt
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 205
+        width: 273
+        height: 185
+      alignment: 9
+      pivot: {x: .501831532, y: .497297287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_shadow
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 392
+        width: 411
+        height: 86
+      alignment: 9
+      pivot: {x: .501216531, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eyes
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 6
+        width: 36
+        height: 15
+      alignment: 9
+      pivot: {x: .5, y: .466666669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: head
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 105
+        width: 207
+        height: 373
+      alignment: 9
+      pivot: {x: .502415478, y: .498659521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: left_should
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 6
+        width: 106
+        height: 55
+      alignment: 9
+      pivot: {x: .22725001, y: .553988457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: right_should
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 3
+        width: 142
+        height: 87
+      alignment: 9
+      pivot: {x: .825764418, y: .640472472}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wings
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 23
+        width: 51
+        height: 125
+      alignment: 9
+      pivot: {x: .509803951, y: .495999992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wings_L
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 106
+        height: 95
+      alignment: 9
+      pivot: {x: .5, y: .49473685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: Atlas1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 8249c2a298d994f21b0454f358b8e30a
+timeCreated: 1437741209
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Walk_tree_root
+    21300002: attack
+    21300004: back
+    21300006: forward
+    21300008: jerk
+    21300010: jump
+    21300012: skils_tree_attack
+    21300014: skils_tree_jerk1
+    21300016: skils_tree_jerk2
+    21300018: skils_tree_root
+    21300020: skils_tree_trow
+    21300022: trow_axe
+    21300024: walk_tree1
+    21300026: walk_tree_back2
+    21300028: walk_tree_forward
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Walk_tree_root
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 872
+        width: 220
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: attack
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 842
+        width: 162
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: back
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 874
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: forward
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 862
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jerk
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 842
+        width: 162
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: jump
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 638
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skils_tree_attack
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 688
+        width: 230
+        height: 154
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skils_tree_jerk1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 760
+        width: 60
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skils_tree_jerk2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 640
+        width: 194
+        height: 202
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skils_tree_root
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 574
+        width: 296
+        height: 268
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: skils_tree_trow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 180
+        height: 172
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: trow_axe
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 392
+        width: 162
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_tree1
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 492
+        width: 74
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_tree_back2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 334
+        width: 142
+        height: 240
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_tree_forward
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 404
+        width: 298
+        height: 170
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

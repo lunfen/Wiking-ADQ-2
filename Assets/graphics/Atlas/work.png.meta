@@ -1,0 +1,616 @@
+fileFormatVersion: 2
+guid: 238d86f5bc28f4b4ba6f5b0b4faf8a62
+timeCreated: 1438248350
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 1
+    21300002: 12
+    21300004: 3
+    21300006: 4
+    21300008: For_grnd_stones
+    21300010: Stone_level_bg1
+    21300012: Stone_wall
+    21300014: ar_black
+    21300016: arrow_attack_plumb
+    21300018: attack_plumb
+    21300020: attack_plumb1
+    21300022: bg
+    21300024: bg_obj1
+    21300026: black
+    21300028: blue_fog_back_obj2
+    21300030: blue_fog_obj1
+    21300032: chain_1
+    21300034: clouds_bg
+    21300036: enter_light_obj1
+    21300038: enter_obj1
+    21300040: enter_obj2
+    21300042: foreground_trible
+    21300044: green_back1
+    21300046: green_gruit_obj1
+    21300048: green_obj1
+    21300050: level_ground
+    21300052: level_platform
+    21300054: log_hor
+    21300056: platform_stone
+    21300058: round_log
+    21300060: sea_bg
+    21300062: spikes_1_black
+    21300064: spikes_stone
+    21300066: stand_center_obj1
+    21300068: stand_center_obj2
+    21300070: stand_left_obj1
+    21300072: stand_left_obj2
+    21300074: stand_right_obj1
+    21300076: stand_right_obj2
+    21300078: stone_bg
+    21300080: stone_ground
+    21300082: stone_ground_tile_centr
+    21300084: stone_ground_upp
+    21300086: stone_level_bg2
+    21300088: stone_obj1
+    21300090: stone_obj2
+    21300092: stone_obj3
+    21300094: stone_round
+    21300096: stone_round1
+    21300098: stone_tile_ground_end
+    21300100: wood_platform
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 1
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 21
+        width: 288
+        height: 529
+      alignment: 9
+      pivot: {x: .5, y: .499054819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 12
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1848
+        width: 242
+        height: 298
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 3
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 532
+        width: 465
+        height: 321
+      alignment: 9
+      pivot: {x: .501075268, y: .498442382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 4
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 29
+        width: 330
+        height: 246
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: For_grnd_stones
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 684
+        height: 956
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Stone_level_bg1
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 2146
+        width: 703
+        height: 490
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Stone_wall
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 17
+        width: 117
+        height: 533
+      alignment: 9
+      pivot: {x: .504273534, y: .499061912}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ar_black
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 241
+        width: 183
+        height: 183
+      alignment: 9
+      pivot: {x: .502732217, y: .497267753}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: arrow_attack_plumb
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 2579
+        width: 17
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: attack_plumb
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1642
+        width: 106
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: attack_plumb1
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1659
+        width: 106
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 1499
+        width: 4
+        height: 1080
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bg_obj1
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 652
+        width: 391
+        height: 341
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: black
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 2572
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue_fog_back_obj2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 958
+        height: 538
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue_fog_obj1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1897
+        width: 958
+        height: 306
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chain_1
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 2472
+        width: 42
+        height: 100
+      alignment: 9
+      pivot: {x: .5, y: .550000012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: clouds_bg
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2203
+        width: 1851
+        height: 433
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enter_light_obj1
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 1646
+        width: 539
+        height: 500
+      alignment: 9
+      pivot: {x: .500927627, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enter_obj1
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1258
+        width: 401
+        height: 388
+      alignment: 9
+      pivot: {x: .50124687, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enter_obj2
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 707
+        width: 204
+        height: 458
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: foreground_trible
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 550
+        width: 531
+        height: 707
+      alignment: 9
+      pivot: {x: .500941634, y: .499292791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: green_back1
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 1257
+        width: 229
+        height: 591
+      alignment: 9
+      pivot: {x: .502183378, y: .499153972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: green_gruit_obj1
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 570
+        width: 155
+        height: 137
+      alignment: 9
+      pivot: {x: .503225803, y: .496350378}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: green_obj1
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 15
+        width: 198
+        height: 203
+      alignment: 9
+      pivot: {x: .5, y: .497536957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_ground
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1217
+        width: 1079
+        height: 365
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_platform
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 853
+        width: 475
+        height: 261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: log_hor
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 573
+        width: 332
+        height: 134
+      alignment: 9
+      pivot: {x: .5, y: .49253732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: platform_stone
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 278
+        width: 360
+        height: 95
+      alignment: 9
+      pivot: {x: .5, y: .49473685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: round_log
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 256
+        width: 121
+        height: 117
+      alignment: 9
+      pivot: {x: .504132211, y: .495726496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sea_bg
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 993
+        width: 411
+        height: 224
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spikes_1_black
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 424
+        width: 264
+        height: 228
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: spikes_stone
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1504
+        width: 318
+        height: 393
+      alignment: 9
+      pivot: {x: .5, y: .498727739}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stand_center_obj1
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1647
+        width: 288
+        height: 103
+      alignment: 9
+      pivot: {x: .5, y: .495145619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stand_center_obj2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1750
+        width: 291
+        height: 147
+      alignment: 9
+      pivot: {x: .5, y: .496598631}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stand_left_obj1
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1416
+        width: 166
+        height: 89
+      alignment: 9
+      pivot: {x: .5, y: .505617976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stand_left_obj2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1276
+        width: 164
+        height: 140
+      alignment: 9
+      pivot: {x: .5, y: .507142842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stand_right_obj1
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 1114
+        width: 184
+        height: 103
+      alignment: 9
+      pivot: {x: .5, y: .495145619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stand_right_obj2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1505
+        width: 186
+        height: 142
+      alignment: 9
+      pivot: {x: .5, y: .478873253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_bg
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 275
+        width: 159
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_ground
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 1582
+        width: 467
+        height: 98
+      alignment: 9
+      pivot: {x: .501070678, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_ground_tile_centr
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1165
+        width: 280
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_ground_upp
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 373
+        width: 448
+        height: 159
+      alignment: 9
+      pivot: {x: .5, y: .496855348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_level_bg2
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 218
+        width: 367
+        height: 352
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_obj1
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 721
+        width: 253
+        height: 272
+      alignment: 9
+      pivot: {x: .501976311, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_obj2
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 995
+        width: 203
+        height: 222
+      alignment: 9
+      pivot: {x: .502463043, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_obj3
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 3
+        width: 158
+        height: 215
+      alignment: 9
+      pivot: {x: .5, y: .502325594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_round
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 29
+        width: 422
+        height: 189
+      alignment: 9
+      pivot: {x: .5, y: .497354507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_round1
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1507
+        width: 348
+        height: 390
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_tile_ground_end
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 557
+        width: 114
+        height: 95
+      alignment: 9
+      pivot: {x: .5, y: .49473685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wood_platform
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 1680
+        width: 877
+        height: 523
+      alignment: 9
+      pivot: {x: .500570118, y: .741873801}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
