@@ -83,7 +83,7 @@ public class charController : MonoBehaviour
 				}
 			
 			if (GetComponent<Animator>().GetBool("jump"))
-					GetComponent<Animator>().Play("jump",-1,0f);
+					GetComponent<Animator>().Play("jump 1",-1,0f);
 			else
 				GetComponent<Animator>().SetBool("jump",true);
 
@@ -95,7 +95,7 @@ public class charController : MonoBehaviour
 		if (throwAxe)
 		{
 			GameObject clone = Instantiate(prefabAxe, throwAxePoint.position, Quaternion.identity) as GameObject;
-			Vector2 force = 50* (transformThrowAxe.position - GameObject.Find("Rhand").transform.position);
+			Vector2 force = 50* (transformThrowAxe.position - GameObject.Find("bone_10").transform.position);
 
 			axeGraphic.enabled = false;
 

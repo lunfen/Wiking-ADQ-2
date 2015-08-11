@@ -21,6 +21,7 @@ public class tutorial : MonoBehaviour
 		// show stage
 		switch (stage)
 		{
+			// moving right
 		case 0:
 			logcontroller.button[0].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
 			logcontroller.button[2].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
@@ -43,6 +44,7 @@ public class tutorial : MonoBehaviour
 				info[1].SetActive(true);
 			}
 			break;
+			// moving left
 		case 1:
 			if (player.movingLeft)
 			{
@@ -53,6 +55,7 @@ public class tutorial : MonoBehaviour
 				info[2].SetActive(true);
 			}
 			break;
+			//Jumping
 		case 2:
 			if (player.pressedJump)
 			{

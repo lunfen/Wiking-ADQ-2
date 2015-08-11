@@ -8,7 +8,7 @@ public class physicsChain : MonoBehaviour
 
 	void Start ()
 	{
-		player = GameObject.Find("Rhand");
+		player = GameObject.Find("bone_10");
 	}
 
 	void Update ()
