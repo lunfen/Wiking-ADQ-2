@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/mechanics/physicsAxe.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/level/charController.cs">
     <Files>
-      <File FileName="Assets/scripts/level/charController.cs" Line="332" Column="36" />
+      <File FileName="Assets/scripts/level/tutorial.cs" Line="58" Column="13" />
+      <File FileName="Assets/scripts/level/charController.cs" Line="70" Column="20" />
       <File FileName="Assets/Puppet2D/Scripts/Puppet2D_GlobalControl.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/mechanics/physicsLog.cs" Line="19" Column="1" />
-      <File FileName="Assets/scripts/level/tutorial.cs" Line="75" Column="50" />
-      <File FileName="Assets/scripts/mechanics/physicsChain.cs" Line="11" Column="36" />
-      <File FileName="Assets/scripts/mechanics/physicsAxe.cs" Line="8" Column="1" />
+      <File FileName="Assets/scripts/mechanics/physicsLog.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/mechanics/physicsChain.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/mechanics/physicsAxe.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

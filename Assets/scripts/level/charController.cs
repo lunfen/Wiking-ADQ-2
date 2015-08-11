@@ -66,11 +66,15 @@ public class charController : MonoBehaviour
 		if (GetComponent<Rigidbody2D>().gravityScale > 0.1f && jerkTimer <= 0 && attack <= 0)
 		{
 
-			if (movingLeft)
-				transform.Translate(new Vector3(0.08f, 0, 0));
+			if (movingLeft || movingRight)
+				if (attack <= 0)
+					transform.Translate(new Vector3(0.08f, 0, 0));
 
-			if (movingRight)
-				transform.Translate(new Vector3(0.08f, 0, 0));
+			// moving bug fix
+			if (transform.localScale.z == 0)
+				transform.localRotation = Quaternion.Euler(0, 0, 0);
+			else
+				transform.localRotation = Quaternion.Euler(0, 180, 0);
 
 			if (jumping)
 			{
@@ -126,18 +130,19 @@ public class charController : MonoBehaviour
 				GetComponent<Rigidbody2D>().gravityScale = 2;
 				GetComponent<Rigidbody2D>().isKinematic = true;
 				GetComponent<Rigidbody2D>().isKinematic = false;
-				GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.localScale.x*1200, 0));
+
+				if (transform.localScale.z == 0)
+					GetComponent<Rigidbody2D>().AddForce(new Vector2(300, 0));
+				else
+					GetComponent<Rigidbody2D>().AddForce(new Vector2(-300, 0));
 
 				// jerk off
-			/*
-				transform.Find("body").gameObject.SetActive(true);
-				transform.Find("Lshoulder").gameObject.SetActive(true);
-				transform.Find("Rshoulder").gameObject.SetActive(true);
-				transform.Find("Lhip").gameObject.SetActive(true);
-				transform.Find("Rhip").gameObject.SetActive(true);
-			*/
+				SkinnedMeshRenderer[] graphics = GetComponentsInChildren<SkinnedMeshRenderer>();
+				foreach (SkinnedMeshRenderer graphic in graphics)
+					graphic.enabled = true;
+
 				jerkEffect.SetActive(false);
-			}
+				}
 
 		// Attack
 		if (attack > 0)
@@ -196,9 +201,6 @@ public class charController : MonoBehaviour
 	{
 		if (onHardSurface)
 			GetComponent<Animator>().SetBool("walk",true);
-//		pappet.flip = true;
-//		transform.localScale = new Vector3(-0.25f,0.25f,1);
-		transform.localRotation = Quaternion.Euler(0, 180, 0);
 		transform.localScale = new Vector3(0.25f,0.25f,-1);
 		movingLeft = true;
 		movingRight = false;
@@ -208,9 +210,6 @@ public class charController : MonoBehaviour
 	{
 		if (onHardSurface)
 			GetComponent<Animator>().SetBool("walk",true);
-//		pappet.flip = false;
-//		transform.localScale = new Vector3(0.25f,0.25f,1);
-		transform.localRotation = Quaternion.Euler(0, 0, 0);
 		transform.localScale = new Vector3(0.25f,0.25f,0);
 		movingRight = true;
 		movingLeft = false;
@@ -305,18 +304,17 @@ public class charController : MonoBehaviour
 			jerkTimer = 0.3f;
 			GetComponent<Rigidbody2D>().isKinematic = true;
 			GetComponent<Rigidbody2D>().isKinematic = false;
-/*
-			transform.Find("body").gameObject.SetActive(false);
-			transform.Find("Lshoulder").gameObject.SetActive(false);
-			transform.Find("Rshoulder").gameObject.SetActive(false);
-			transform.Find("Lhip").gameObject.SetActive(false);
-			transform.Find("Rhip").gameObject.SetActive(false);
-*/
+
+			// hide graphics
+			SkinnedMeshRenderer[] graphics = GetComponentsInChildren<SkinnedMeshRenderer>();
+			foreach (SkinnedMeshRenderer graphic in graphics)
+				graphic.enabled = false;
+
 			// swap motion blur
-			if (transform.localScale.x < 0)
-				jerkEffect.transform.Find("blur").GetComponent<ParticleSystemRenderer>().material.SetTexture("_MainTex", jerkTexture[1]);
-			else
+			if (transform.localScale.z == 0)
 				jerkEffect.transform.Find("blur").GetComponent<ParticleSystemRenderer>().material.SetTexture("_MainTex", jerkTexture[0]);
+			else
+				jerkEffect.transform.Find("blur").GetComponent<ParticleSystemRenderer>().material.SetTexture("_MainTex", jerkTexture[1]);
 
 			jerkEffect.SetActive(true);
 		}
