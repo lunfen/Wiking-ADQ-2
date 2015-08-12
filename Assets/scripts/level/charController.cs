@@ -101,7 +101,8 @@ public class charController : MonoBehaviour
 			GameObject clone = Instantiate(prefabAxe, throwAxePoint.position, Quaternion.identity) as GameObject;
 			Vector2 force = 50* (transformThrowAxe.position - GameObject.Find("bone_10").transform.position);
 
-			axeGraphic.enabled = false;
+//			axeGraphic.enabled = false;
+			GetComponent<Animator>().SetBool("hanging",true);
 
 			clone.GetComponent<Rigidbody2D>().AddForce(force);
 			throwAxe = false;
@@ -237,7 +238,12 @@ public class charController : MonoBehaviour
 			GetComponent<Animator>().SetBool("hanging",false);
 			GetComponent<Rigidbody2D>().isKinematic = true;
 			GetComponent<Rigidbody2D>().isKinematic = false;
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(800*transform.localScale.x,500));
+
+			if (transform.localScale.z == 0)
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(200,500));
+			else
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(-200,500));
+
 			axeGraphic.enabled = true;
 			doubleJump = false;
 			}
@@ -298,8 +304,8 @@ public class charController : MonoBehaviour
 
 		if (jerkPower >= 1 && !_hanging)
 		{
-			if (onHardSurface)
-				transform.Translate(new Vector3(0, 0.1f, 0));
+			transform.Translate(new Vector3(0, 0.1f, 0));
+
 			jerkPower -= 1;
 			jerkTimer = 0.3f;
 			GetComponent<Rigidbody2D>().isKinematic = true;
