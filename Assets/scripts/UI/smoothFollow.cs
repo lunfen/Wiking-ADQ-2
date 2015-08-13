@@ -11,13 +11,13 @@ public class smoothFollow : MonoBehaviour
 	int index;
 	float bestDistance;
 	Transform player;
-	RectTransform levelMask;
+	public RectTransform levelMask;
 	bool switchDampTime;
 
 	void Awake ()
 	{
 		player = GameObject.Find("character").transform;
-		levelMask = GameObject.Find("LevelMask").GetComponent<RectTransform>();
+		levelMask.gameObject.SetActive(true);
 
 		//fix respawn bug
 		player.gameObject.GetComponent<charController>().moveRight();
