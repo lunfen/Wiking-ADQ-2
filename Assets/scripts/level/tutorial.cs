@@ -14,6 +14,9 @@ public class tutorial : MonoBehaviour
 	{
 		player = GameObject.Find("character").GetComponent<charController>();
 		logcontroller = GameObject.Find("loghorController").GetComponent<physicsLog>();
+
+		player.curJerks = 2;
+		player.showJerk();
 	}
 	
 	void Update () 
@@ -42,60 +45,104 @@ public class tutorial : MonoBehaviour
 				info[1].SetActive(true);
 			}
 			break;
-		//Jumping
+		//Jump
 		case 1:
 			if (player.pressedJump)
 			{
+				stage = 2;
+				info[1].GetComponent<Animator>().SetTrigger("out");
+			}
+			break;
+		//Jump off
+		case 2:
+			if (player.transform.position.x > -10)
+			{
 				stage = 3;
-				logcontroller.button[3].GetComponent<Image>().color = new Color(1,1,1,1);
-				button[3].SetActive(true);
-				info[1].SetActive(false);
 				info[2].SetActive(true);
 			}
 			break;
-		case 2:
-			if (player.transform.position.x > -2.5)
+		// Double jump
+		case 3:
+			if (player.transform.position.x > -4)
 			{
 				stage = 4;
-				info[2].SetActive(false);
+				info[2].GetComponent<Animator>().SetTrigger("out");
+			}
+			break;
+		// attack
+		case 4:
+			if (player.transform.position.x > 18)
+			{
+				stage = 5;
+				logcontroller.button[3].GetComponent<Image>().color = new Color(1,1,1,1);
+				button[3].SetActive(true);
 				info[3].SetActive(true);
 			}
 			break;
-		case 3:
+		// kill enemy
+		case 5:
 			if (!GameObject.FindGameObjectWithTag("death25"))
 			{
-				stage = 5;
-				info[4].SetActive(false);
-				info[7].SetActive(true);
-				info[8].SetActive(true);
-				logcontroller.button[5].GetComponent<Image>().color = new Color(1,1,1,1);
-				button[5].SetActive(true);
-			}
-			break;
-		case 4:
-			if (player.pressedJerk)
-			{
 				stage = 6;
-				info[7].SetActive(false);
-				info[8].SetActive(false);
-				info[5].SetActive(true);
-				logcontroller.isTutorial = false;
+				info[3].GetComponent<Animator>().SetTrigger("out");
 			}
 			break;
-		case 5:
-			if (player._hanging)
+			// Jerk
+		case 6:
+			if (player.transform.position.x > 35)
 			{
 				stage = 7;
-				info[5].SetActive(false);
-				info[6].SetActive(true);
+				logcontroller.button[5].GetComponent<Image>().color = new Color(1,1,1,1);
+				button[5].SetActive(true);
+				info[4].SetActive(true);
 			}
 			break;
-		case 6:
-			if (player.transform.position.x > 55)
+			// Jerk off
+		case 7:
+			if (player.transform.position.x > 43)
 			{
 				stage = 8;
-				info[7].SetActive(false);
-				info[8].SetActive(false);
+				info[4].GetComponent<Animator>().SetTrigger("out");
+			}
+			break;
+			// Throw axe
+		case 8:
+			if (player.transform.position.x > 54)
+			{
+				stage = 9;
+				logcontroller.button[4].GetComponent<Image>().color = new Color(1,1,1,1);
+				button[4].SetActive(true);
+				logcontroller.isTutorial = false;
+				info[5].SetActive(true);
+			}
+			break;
+		case 9:
+			if (player._hanging)
+			{
+				stage = 10;
+				info[6].SetActive(true);
+				info[5].GetComponent<Animator>().SetTrigger("out");
+			}
+			break;
+		case 10:
+			if (!player._hanging)
+			{
+				stage = 11;
+				info[6].GetComponent<Animator>().SetTrigger("out");
+			}
+			break;
+		case 11:
+			if (player.transform.position.x > 68)
+			{
+				stage = 12;
+				info[7].SetActive(true);
+			}
+			break;
+		case 12:
+			if (player.transform.position.x > 72)
+			{
+				stage = 13;
+				info[7].GetComponent<Animator>().SetTrigger("out");
 			}
 			break;
 		}

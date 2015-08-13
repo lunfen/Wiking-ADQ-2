@@ -29,13 +29,16 @@ public class charController : MonoBehaviour
 	GameObject jerkButton;
 	GameObject jerkEffect;
 	public Texture[] jerkTexture;
+	public GameObject[] jerkIcon;
+	int maxJerks;
+	public int curJerks;
+	public Image jerkScale;
 
 	// Axe
 	bool throwAxe;
 	public GameObject prefabAxe;
 	public bool _hanging;
 	public Transform throwAxePoint;
-//	public SpriteRenderer axeGraphic;
 	public SkinnedMeshRenderer axeGraphic;
 	public Transform transformThrowAxe;
 	GameObject axeTrail;
@@ -58,6 +61,16 @@ public class charController : MonoBehaviour
 		floatingEffect.SetActive(false);
 
 		Time.timeScale = 1;
+
+		// jerk icons activate
+		maxJerks = PlayerPrefs.GetInt("jerks");
+		if (maxJerks == 0)
+		{
+			PlayerPrefs.SetInt("jerks", 1);
+			maxJerks = 1;
+		}
+
+		showJerk ();
 	}
 
 	void Update ()
@@ -99,13 +112,11 @@ public class charController : MonoBehaviour
 		if (throwAxe)
 		{
 			GameObject clone = Instantiate(prefabAxe, throwAxePoint.position, Quaternion.identity) as GameObject;
-			Vector2 force = 50* (transformThrowAxe.position - GameObject.Find("bone_10").transform.position);
-
-//			axeGraphic.enabled = false;
-			GetComponent<Animator>().SetBool("hanging",true);
+			Vector2 force = 105* (transformThrowAxe.position - GameObject.Find("bone_10_CTRL").transform.position);
 
 			clone.GetComponent<Rigidbody2D>().AddForce(force);
 			throwAxe = false;
+			GetComponent<Animator>().SetBool("hanging",true);
 
 			floatingEffect.SetActive(true);
 		}
@@ -117,7 +128,7 @@ public class charController : MonoBehaviour
 		if (jerkPower < 1)
 			{
 			jerkPower += 0.005f;
-			jerkButton.GetComponent<Image>().color = new Color(1,1,1,jerkPower);
+			jerkScale.fillAmount = 1 -jerkPower;
 			}
 
 		if (jerkTimer > 0)
@@ -286,7 +297,7 @@ public class charController : MonoBehaviour
 	{
 		pressedAttack = true;
 
-		if (!_hanging)
+		if (!_hanging && onHardSurface)
 		{
 		attack = 0.2f;
 		GetComponent<Animator>().SetBool("attack", true);
@@ -302,14 +313,17 @@ public class charController : MonoBehaviour
 	{
 		pressedJerk = true;
 
+		if (curJerks > 0)
 		if (jerkPower >= 1 && !_hanging)
 		{
 			transform.Translate(new Vector3(0, 0.1f, 0));
 
 			jerkPower -= 1;
 			jerkTimer = 0.3f;
+			curJerks -= 1;
 			GetComponent<Rigidbody2D>().isKinematic = true;
 			GetComponent<Rigidbody2D>().isKinematic = false;
+			showJerk ();
 
 			// hide graphics
 			SkinnedMeshRenderer[] graphics = GetComponentsInChildren<SkinnedMeshRenderer>();
@@ -353,4 +367,12 @@ public class charController : MonoBehaviour
 		}
 	}
 
+	public void showJerk ()
+	{
+		for (int i = 0; i < 5; i++)
+			if (curJerks < i+1)
+				jerkIcon[i].SetActive(false);
+			else
+				jerkIcon[i].SetActive(true);
+	}
 }
