@@ -21,60 +21,47 @@ public class tutorial : MonoBehaviour
 		// show stage
 		switch (stage)
 		{
-			// moving right
+		// moving left or right
 		case 0:
-			logcontroller.button[0].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
 			logcontroller.button[2].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
 			logcontroller.button[3].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
 			logcontroller.button[4].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
 			logcontroller.button[5].GetComponent<Image>().color = new Color(0.3f,0.3f,0.3f,0.5f);
-			button[0].SetActive(false);
 			button[2].SetActive(false);
 			button[3].SetActive(false);
 			button[4].SetActive(false);
 			button[5].SetActive(false);
 			info[0].SetActive(true);
 
-			if (player.movingRight)
+			if (player.movingRight || player.movingLeft)
 			{
 				stage = 1;
-				logcontroller.button[0].GetComponent<Image>().color = new Color(1,1,1,1);
-				button[0].SetActive(true);
-				info[0].SetActive(false);
+				logcontroller.button[2].GetComponent<Image>().color = new Color(1,1,1,1);
+				button[2].SetActive(true);
+				info[0].GetComponent<Animator>().SetTrigger("out");
 				info[1].SetActive(true);
 			}
 			break;
-			// moving left
+		//Jumping
 		case 1:
-			if (player.movingLeft)
-			{
-				stage = 2;
-				logcontroller.button[2].GetComponent<Image>().color = new Color(1,1,1,1);
-				button[2].SetActive(true);
-				info[1].SetActive(false);
-				info[2].SetActive(true);
-			}
-			break;
-			//Jumping
-		case 2:
 			if (player.pressedJump)
 			{
 				stage = 3;
 				logcontroller.button[3].GetComponent<Image>().color = new Color(1,1,1,1);
 				button[3].SetActive(true);
+				info[1].SetActive(false);
+				info[2].SetActive(true);
+			}
+			break;
+		case 2:
+			if (player.transform.position.x > -2.5)
+			{
+				stage = 4;
 				info[2].SetActive(false);
 				info[3].SetActive(true);
 			}
 			break;
 		case 3:
-			if (player.transform.position.x > -2.5)
-			{
-				stage = 4;
-				info[3].SetActive(false);
-				info[4].SetActive(true);
-			}
-			break;
-		case 4:
 			if (!GameObject.FindGameObjectWithTag("death25"))
 			{
 				stage = 5;
@@ -85,7 +72,7 @@ public class tutorial : MonoBehaviour
 				button[5].SetActive(true);
 			}
 			break;
-		case 5:
+		case 4:
 			if (player.pressedJerk)
 			{
 				stage = 6;
@@ -95,7 +82,7 @@ public class tutorial : MonoBehaviour
 				logcontroller.isTutorial = false;
 			}
 			break;
-		case 6:
+		case 5:
 			if (player._hanging)
 			{
 				stage = 7;
@@ -103,7 +90,7 @@ public class tutorial : MonoBehaviour
 				info[6].SetActive(true);
 			}
 			break;
-		case 7:
+		case 6:
 			if (player.transform.position.x > 55)
 			{
 				stage = 8;
