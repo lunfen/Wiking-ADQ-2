@@ -14,6 +14,9 @@ public class tutorial : MonoBehaviour
 	{
 		player = GameObject.Find("character").GetComponent<charController>();
 		logcontroller = GameObject.Find("loghorController").GetComponent<physicsLog>();
+
+		player.curJerks = 2;
+		player.showJerk();
 	}
 	
 	void Update () 
