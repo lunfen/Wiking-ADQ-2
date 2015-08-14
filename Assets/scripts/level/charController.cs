@@ -64,13 +64,16 @@ public class charController : MonoBehaviour
 
 		// jerk icons activate
 		maxJerks = PlayerPrefs.GetInt("jerks");
-		if (maxJerks == 0)
+		if (maxJerks < 3)
 		{
-			PlayerPrefs.SetInt("jerks", 1);
-			maxJerks = 1;
+			PlayerPrefs.SetInt("jerks", 3);
+			maxJerks = 3;
 		}
 		if (Application.loadedLevelName != "tutorial")
-			curJerks = maxJerks;
+			curJerks = 1;
+		else
+			curJerks = 2;
+
 		showJerk ();
 	}
 
@@ -203,8 +206,10 @@ public class charController : MonoBehaviour
 		}
 
 		// Additional
-		if (hpLine.transform.localPosition.x - 277 > hplineOffset)
-			hpLine.Translate(new Vector3(-1,0,0));
+//		if (hpLine.transform.localPosition.x - 277 > hplineOffset)
+//			hpLine.Translate(new Vector3(-1,0,0));
+
+		hpLine.transform.localPosition = new Vector2(hplineOffset + 277,0);
 
 		if (lockdamageTimer > 0)
 			lockdamageTimer -= Time.deltaTime;
@@ -361,10 +366,15 @@ public class charController : MonoBehaviour
 			health -= 25;
 			hplineOffset -= 110;
 
-			deadforce = Vector2.Distance(transform.position, coll.transform.position);
+			deadforce = Vector2.Distance(transform.position, coll.transform.position)/5;
 
 			if (transform.position.x < coll.transform.position.x)
 				deadforce *= -1;
+		}
+
+		if (coll.gameObject.tag == "win")
+		{
+			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 	}
 
@@ -375,5 +385,23 @@ public class charController : MonoBehaviour
 				jerkIcon[i].SetActive(false);
 			else
 				jerkIcon[i].SetActive(true);
+	}
+	
+	public void AddJerks(int jerks)
+	{
+		if (curJerks < maxJerks)
+		{
+		curJerks += jerks;
+		showJerk ();
+		}
+	}
+	
+	public void AddHealth(int hp)
+	{
+		if (health < 100)
+		{
+		health += hp;
+		hplineOffset += 110;
+		}
 	}
 }
