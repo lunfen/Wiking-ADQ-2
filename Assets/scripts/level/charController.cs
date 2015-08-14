@@ -69,7 +69,8 @@ public class charController : MonoBehaviour
 			PlayerPrefs.SetInt("jerks", 1);
 			maxJerks = 1;
 		}
-
+		if (Application.loadedLevelName != "tutorial")
+			curJerks = maxJerks;
 		showJerk ();
 	}
 

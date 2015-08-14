@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/level/charController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/mechanics/physicsJumper.cs">
     <Files>
-      <File FileName="Assets/scripts/level/charController.cs" Line="131" Column="1" />
+      <File FileName="Assets/scripts/level/charController.cs" Line="72" Column="47" />
+      <File FileName="Assets/scripts/mechanics/physicsJumper.cs" Line="6" Column="25" />
+      <File FileName="Assets/scripts/mechanics/physicsPlatform.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
