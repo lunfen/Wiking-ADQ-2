@@ -81,7 +81,7 @@ public class charController : MonoBehaviour
 
 			if (movingLeft || movingRight)
 				if (attack <= 0)
-					transform.Translate(new Vector3(0.08f, 0, 0));
+					transform.Translate(new Vector3(2.45f*Time.deltaTime, 0, 0));
 
 			// moving bug fix
 			if (transform.localScale.z == 0)
@@ -175,8 +175,8 @@ public class charController : MonoBehaviour
 		else
 			attack -= Time.deltaTime;
 
-		if (transform.position.y < -50)
-			Application.LoadLevel(Application.loadedLevel);
+//		if (transform.position.y < -50)
+//			Application.LoadLevel(Application.loadedLevel);
 
 		// Check health
 		if (health <= 0)

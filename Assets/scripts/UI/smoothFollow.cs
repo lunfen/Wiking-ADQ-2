@@ -86,6 +86,6 @@ public class smoothFollow : MonoBehaviour
 
 	void OnGUI()
 	{
-		GUI.Label(new Rect(150,20,100,100), "damp time " + dampTime);
+		//GUI.Label(new Rect(150,20,100,100), "damp time " + dampTime);
 	}
 }
