@@ -14,6 +14,7 @@ public class physicsJumper : MonoBehaviour
 			coll.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, force));
 			coll.GetComponent<charController>().onHardSurface = false;
 			coll.GetComponent<Animator>().SetBool("jump", true);
+			GetComponent<Animator>().SetTrigger("jump");
 		}
 	}
 }
